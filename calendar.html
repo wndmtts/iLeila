@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>CoWeb</title>
+
+    <!-- CSS FILES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="css/apexcharts.css" rel="stylesheet">
+
+    <link href="css/tooplate-mini-finance.css" rel="stylesheet">
+    <!--
+
+    Tooplate 2135 Mini Finance
+
+    https://www.tooplate.com/view/2135-mini-finance
+
+    Bootstrap 5 Dashboard Admin Template
+
+    -->
+    <script DEFER src="js/setMenu.js"></script>
+    <script DEFER src="js/setHeader.js"></script>
+</head>
+
+<body>
+<div id="header"></div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div id="menu"></div>
+
+        <main class="main-wrapper col-md-9 ms-sm-auto py-4 col-lg-9 px-md-4 border-start">
+            <div class="title-group mb-3">
+                <h1 class="h2 mb-0">Agenda</h1>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="custom-block bg-white">
+                        <select class="form-select" onchange="adicionarTags()">
+                            <option value="">Eliane</option>
+                            <option value="">Soleide</option>
+                            <option value="">Tatiana Rocha</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-4">
+                <div class="col-lg-12 col-12">
+
+                    <table class="table-responsive w-100 h-100">
+                        <style>
+                            .tr{
+                                height: 100px;
+                            }
+
+                            .tr>td{
+                                text-align: end;
+                                width: 100px;
+                                vertical-align: top;
+                                border: solid 1px #B8B8B8;
+                                border-radius: 10px;
+                                justify-content: end;
+                                align-content: end;
+                            }
+
+                            .tr>td:hover{
+                                background-color: #E5E5E5;
+                                transition: all 0.1s ease-in-out
+                            }
+
+                            .event{
+
+                                padding: 5px;
+                                background-color: #CCA43B;
+                                border-radius: 10px;
+                                color: white;
+                                font-weight: 500;
+                                font-size: small;
+                                margin: 5px;
+                            }
+                        </style>
+                        <tr class="tr">
+                            <td class="date">26</td>
+                            <td class="date">27</td>
+                            <td class="date">28</td>
+                            <td class="date">29</td>
+                            <td class="date">30</td>
+                            <td class="date">01</td>
+                            <td class="date">02</td>
+                        </tr>
+                        <tr class="tr">
+                            <td class="date">03</td>
+                            <td class="date">04</td>
+                            <td class="date">05</td>
+                            <td class="date">06</td>
+                            <td class="date">07</td>
+                            <td class="date">08</td>
+                            <td class="date">09</td>
+                        </tr>
+                        <tr class="tr">
+                            <td class="date">10</td>
+                            <td class="date">11</td>
+                            <td class="date">12</td>
+                            <td class="date">13</td>
+                            <td class="date">14</td>
+                            <td class="date">15</td>
+                            <td class="date">16</td>
+                        </tr>
+                        <tr class="tr">
+                            <td class="date">17</td>
+                            <td class="date">18</td>
+                            <td class="date">19</td>
+                            <td class="date">20</td>
+                            <td class="date">21</td>
+                            <td class="date">22</td>
+                            <td class="date">23</td>
+                        </tr>
+                        <tr class="tr">
+                            <td class="date">24</td>
+                            <td class="date">25</td>
+                            <td class="date">26</td>
+                            <td class="date">27</td>
+                            <td class="date">28</td>
+                            <td class="date">29</td>
+                            <td class="date">30</td>
+                        </tr>
+                        <tr class="tr">
+                            <td class="date">31</td>
+                            <td class="date">01</td>
+                            <td class="date">02</td>
+                            <td class="date">03</td>
+                            <td class="date">04</td>
+                            <td class="date">05</td>
+                            <td class="date">06</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div>
+
+            </div>
+
+            <footer class="site-footer">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-12 col-12">
+                            <p class="copyright-text">Copyright © Mini Finance 2048
+                                - Design: <a rel="sponsored" href="https://www.tooplate.com" target="_blank">Tooplate</a></p>
+                        </div>
+
+                    </div>
+                </div>
+            </footer>
+        </main>
+
+    </div>
+</div>
+
+<!-- JAVASCRIPT FILES -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/apexcharts.min.js"></script>
+<script src="js/custom.js"></script>
+
+<script>
+    function procedimentoSalao() {
+        const procedimentos = [
+            "Corte de cabelo",
+            "Manicure",
+            "Maquiagem",
+            "Progressiva",
+            "Hidratação",
+            "Tintura",
+            "Matização",
+            // Adicione mais procedimentos conforme necessário
+        ];
+
+        return procedimentos[Math.floor(Math.random() * procedimentos.length)];
+    }
+
+    function nomeMulher() {
+        const nomes = [
+            "Ana",
+            "Maria",
+            "Clara",
+            "Isabela",
+            "Terezinha",
+            "Andréia",
+            "Rita",
+            "Márcia",
+            "Fabiana",
+            "Raimunda",
+            "Larissa",
+            "Débora",
+            "Júlia",
+            // Adicione mais nomes conforme necessário
+        ];
+
+        return nomes[Math.floor(Math.random() * nomes.length)];
+    }
+
+    function adicionarTags() {
+        const dateCells = document.querySelectorAll('.date');
+        const eventTags = document.querySelectorAll('.event');
+        eventTags.forEach(tag => {
+            tag.parentNode.removeChild(tag);
+        });
+
+        const numberOfCellsToAdd = Math.floor(Math.random() * dateCells.length) + 1; // Define o número de células para adicionar
+
+        for (let i = 0; i < numberOfCellsToAdd; i++) {
+            const randomCellIndex = Math.floor(Math.random() * dateCells.length);
+            const pElement = document.createElement('p');
+            pElement.innerHTML = `${procedimentoSalao()} - ${nomeMulher()}`;
+            pElement.classList.add('event'); // Adiciona a classe 'event' ao elemento <p>
+            dateCells[randomCellIndex].appendChild(pElement);
+        }
+    }
+    document.addEventListener('DOMContentLoaded', adicionarTags);
+</script>
+</body>
+</html>
