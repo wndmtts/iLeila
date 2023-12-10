@@ -29,6 +29,13 @@ var menuContent = `
                 </li>
 
                 <li class="nav-item">
+                    <a class="nav-link" href="inventory.html">
+                        <i class="bi bi-box-seam-fill me-2"></i>
+                        Inventário
+                    </a>
+                </li>
+
+                <li class="nav-item">
                     <a class="nav-link" href="profile.html">
                         <i class="bi-person me-2"></i>
                         Perfil
@@ -47,11 +54,6 @@ var menuContent = `
                         <i class="bi-question-circle me-2"></i>
                         Central de Ajuda
                     </a>
-                </li>
-
-                <li class="nav-item featured-box mt-lg-5 mt-4 mb-4">
-                    <img src="images/Pagar.png" class="img-fluid" alt="">
-                        <a class="btn custom-btn" href="#">Atualizar Conta</a>
                 </li>
 
                 <li class="nav-item border-top mt-auto pt-2">
